@@ -1,10 +1,25 @@
 {
   "name": "spring-exam",
-  "module": "index.ts",
-  "type": "module",
   "private": true,
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "lint": "oxlint vite.config.js",
+    "format": "oxfmt vite.config.js index.html src/style.css package.json README.md",
+    "format:check": "oxfmt --check vite.config.js index.html src/style.css package.json README.md"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/bun": "latest",
+    "marked": "^18.2.1",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
+    "shiki": "^4.6.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4"
   },
   "peerDependencies": {
     "typescript": "^5"

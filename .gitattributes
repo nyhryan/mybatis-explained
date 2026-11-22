@@ -1,0 +1,6 @@
+# Oxfmt's checked inputs must retain LF in Windows checkouts.
+/vite.config.js text eol=lf
+/index.html text eol=lf
+/src/style.css text eol=lf
+/package.json text eol=lf
+/README.md text eol=lf
