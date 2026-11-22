@@ -1,13 +1,13 @@
 # MyBatis 문서 빌드
 
-Bun 환경에서 의존성을 설치하고 문서를 빌드합니다.
+Bun과 uv를 설치한 환경에서 의존성을 설치하고 문서를 빌드합니다. uv는 빌드 중 폰트 서브셋에 필요한 Python 의존성을 준비합니다.
 
 ```sh
 bun install --frozen-lockfile
 bun run build
 ```
 
-입력은 `docs/mybatis-guide.md`, 결과물은 `dist/index.html`입니다. 결과 HTML에는 본문과 스타일, 코드 강조가 포함되므로 이 파일 하나를 복사해 오프라인으로 열 수 있습니다.
+입력은 `docs/mybatis-guide.md`, 결과물은 `dist/index.html`입니다. 결과 HTML에는 본문, 스타일, 코드 강조와 폰트가 포함되므로 이 파일 하나를 복사해 오프라인으로 열 수 있습니다. 빌드할 때마다 문서의 문자에 맞춰 IBM Plex Sans KR 서브셋을 만들고 `MyBatis Guide Sans`라는 이름으로 내장합니다.
 
 - `bun run dev`: 원고의 로컬 개발 미리보기
 - `bun run lint`: 구현 소스와 설정을 Oxlint로 검사

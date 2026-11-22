@@ -5,7 +5,7 @@
   "module": "index.ts",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "vite build",
+    "build": "vite build && uv run --script scripts/subset-fonts.py",
     "lint": "oxlint vite.config.js",
     "format": "oxfmt vite.config.js index.html src/style.css package.json README.md",
     "format:check": "oxfmt --check vite.config.js index.html src/style.css package.json README.md"
