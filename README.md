@@ -1,4 +1,8 @@
-# MyBatis 문서 빌드
+# MyBatis 간단 설명
+
+문서 바로가기: [📎 https://blog.ataidev.cc/mybatis-explained/](https://blog.ataidev.cc/mybatis-explained/) 
+
+## MyBatis 문서 빌드
 
 Bun과 uv를 설치한 환경에서 의존성을 설치하고 문서를 빌드합니다. uv는 빌드 중 폰트 서브셋에 필요한 Python 의존성을 준비합니다.
 
