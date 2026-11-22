@@ -221,7 +221,13 @@ public interface OrderMapper {
 - `id`: 해당 인터페이스에 정의된 메서드 이름
 - `select`, `insert`, `update`, `delete`: 수행할 SQL의 종류
 
-Spring Boot 애플리케이션에 MyBatis Spring Boot Starter와 MySQL JDBC 드라이버를 추가하고 데이터 소스를 설정합니다. `application.properties`에 `mybatis.mapper-locations=classpath:mappers/OrderMapper.xml`을 지정하면 XML을 읽습니다. 애플리케이션의 기본 검색 패키지 아래에 있는 `@Mapper` 인터페이스는 Starter가 등록합니다. [MyBatis Spring Boot Starter](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/) 이후 XML 코드 블록은 별도 설명이 없으면 위 `<mapper>` 내부에 작성합니다. `<mapper>` 예제의 생략 기호는 아래 절의 SQL 정의가 들어갈 자리입니다.
+Spring Boot 애플리케이션에 MyBatis Spring Boot Starter와 MySQL JDBC 드라이버를 추가하고 데이터 소스를 설정합니다. `application.properties`에 다음 경로를 지정하면 XML을 읽습니다.
+
+```text
+mybatis.mapper-locations=classpath:mappers/OrderMapper.xml
+```
+
+애플리케이션의 기본 검색 패키지 아래에 있는 `@Mapper` 인터페이스는 Starter가 등록합니다. [MyBatis Spring Boot Starter](https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/) 이후 XML 코드 블록은 별도 설명이 없으면 위 `<mapper>` 내부에 작성합니다. `<mapper>` 예제의 생략 기호는 아래 절의 SQL 정의가 들어갈 자리입니다.
 
 ### 4.3 자주 사용하는 속성
 
